@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+cod_code_codec
+
+# MacOSx hidden files
+.DS_Store
