@@ -17,9 +17,9 @@ public:
 	void setFilename(const std::string & filename);
 	const std::string & getFilename() const;
 
-	bool parse() const;
+	bool parse();
 	bool parse(const std::string & filename);
-	virtual void onParse(unsigned int x, unsigned int y, const std::string & value) const = 0;
+	virtual bool onParse(unsigned int x, unsigned int y, const std::string & value) = 0;
 
 protected:
 	std::string		_filename;

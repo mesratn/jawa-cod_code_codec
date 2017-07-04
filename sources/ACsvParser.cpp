@@ -21,7 +21,7 @@ const std::string & ACsvParser::getFilename() const
 	return _filename;
 }
 
-bool ACsvParser::parse() const
+bool ACsvParser::parse()
 {
 	std::ifstream file;
 	std::string line;
