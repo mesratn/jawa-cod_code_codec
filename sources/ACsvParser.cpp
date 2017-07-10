@@ -35,15 +35,21 @@ bool ACsvParser::parse()
 		std::stringstream ss(line);
 
 		for (unsigned int x = 0; std::getline(ss, line, ';'); ++x)
-			onParse(x, y, line);
+			if (onParse(x, y, line) == false)
+				return false;
 	}
 
 	file.close();
-	return true;
+	return finalCheck();
 }
 
 bool ACsvParser::parse(const std::string & filename)
 {
 	setFilename(filename);
 	return parse();
+}
+
+bool ACsvParser::finalCheck()
+{
+	return true;
 }
