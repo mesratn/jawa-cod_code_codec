@@ -31,6 +31,7 @@
 *.out
 *.app
 cod_code_codec
+test_dialogue
 
 # MacOSx hidden files
 .DS_Store

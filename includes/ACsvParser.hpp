@@ -20,6 +20,8 @@ public:
 	bool parse();
 	bool parse(const std::string & filename);
 	virtual bool onParse(unsigned int x, unsigned int y, const std::string & value) = 0;
+
+protected:
 	virtual bool finalCheck();
 
 protected:
