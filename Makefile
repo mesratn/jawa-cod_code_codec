@@ -65,8 +65,7 @@ fclean:					clean
 								make fclean -C mysf/
 
 re:							fclean all
-								make re -C mysf/
 
-retest_dial:		fclean test_dial
+retest_dial:		re test_dial
 
 .PHONY:					all libmysf $(NAME) test_dial $(TEST_DIAL) clean fclean re retest_dial
